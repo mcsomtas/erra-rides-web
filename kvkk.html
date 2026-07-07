@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Erra Rides — KVKK Aydınlatma Metni</title>
+  <style>
+    :root { --turuncu: #FF6B00; --koyu: #131316; }
+    * { box-sizing: border-box; }
+    body { margin: 0; background: var(--koyu); color: #eee; font-family: -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif; line-height: 1.65; padding: 24px; }
+    .kutu { max-width: 820px; margin: 0 auto; background: #1c1c20; border-radius: 16px; padding: 28px; border: 1px solid #2a2a2e; }
+    h1 { color: var(--turuncu); font-size: 1.5rem; margin: 0 0 4px; }
+    h2 { color: var(--turuncu); font-size: 1.12rem; margin: 28px 0 6px; }
+    h3 { color: #ffb37a; font-size: 1rem; margin: 18px 0 4px; }
+    .alt { color: #999; font-size: .9rem; margin-bottom: 16px; }
+    ul { padding-left: 20px; } li { margin: 5px 0; }
+    a { color: var(--turuncu); }
+    code { background: #000; padding: 2px 6px; border-radius: 5px; color: #fff; }
+    hr { border: none; border-top: 1px solid #2a2a2e; margin: 28px 0; }
+    .uyari { background: rgba(231,76,60,.14); border: 1px solid rgba(231,76,60,.5); border-radius: 10px; padding: 12px 14px; margin: 14px 0; color: #ffd0cb; }
+    .vurgu { background: rgba(255,107,0,.12); border: 1px solid rgba(255,107,0,.4); border-radius: 10px; padding: 12px 14px; margin: 14px 0; }
+    table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: .95rem; }
+    th, td { border: 1px solid #2a2a2e; padding: 8px 10px; text-align: left; vertical-align: top; }
+    th { background: #232327; color: var(--turuncu); }
+    .en { color: #bbb; }
+  </style>
+</head>
+<body>
+  <div class="kutu">
+    <h1>Erra Rides — Kişisel Verilerin İşlenmesine İlişkin Aydınlatma Metni</h1>
+    <p class="alt">6698 sayılı Kişisel Verilerin Korunması Kanunu (“KVKK”) kapsamında · Son güncelleme: 04.07.2026</p>
+
+    <div class="uyari">
+      <strong>Hukuki inceleme notu:</strong> Bu metin, uygulamanın gerçek veri işleme akışları temel alınarak hazırlanmış bir <strong>taslaktır</strong> ve yayımlanmadan/kullanılmadan önce bir <strong>KVKK / hukuk danışmanına</strong> onaylatılmalıdır. Ayrıca VERBİS kayıt yükümlülüğü değerlendirmesi yapılmalıdır. Köşeli parantezli alanlar ([...]) veri sorumlusu tarafından doldurulmalıdır.
+    </div>
+
+    <p>Bu Aydınlatma Metni, <strong>Erra Rides</strong> mobil uygulaması (“Uygulama”) aracılığıyla kişisel verilerinizin KVKK m.10 ve Aydınlatma Yükümlülüğünün Yerine Getirilmesinde Uyulacak Usul ve Esaslar Hakkında Tebliğ uyarınca hangi amaçlarla ve nasıl işlendiğini açıklamak üzere hazırlanmıştır. Uygulama; motosiklet sürüşlerinin kaydı, kat edilen mesafenin bölge bazında sıralanması ve topluluk özellikleri (kulüpler, profiller, madalyalar, harita işaretlemeleri, karşılaşmalar, canlı harita) sunar.</p>
+
+    <h2>1. Veri Sorumlusu</h2>
+    <ul>
+      <li><strong>Veri sorumlusu:</strong> [AD SOYAD] (bireysel geliştirici)</li>
+      <li><strong>Adres:</strong> [AÇIK ADRES]</li>
+      <li><strong>E-posta:</strong> <code>mcsomtas@gmail.com</code></li>
+      <li><strong>VERBİS:</strong> [Varsa kayıt no / değerlendirme sonucu]</li>
+    </ul>
+
+    <h2>2. İşlenen Kişisel Veri Kategorileri</h2>
+    <table>
+      <tr><th>Kategori</th><th>Örnek veriler</th></tr>
+      <tr><td>Kimlik</td><td>Ad-soyad, kullanıcı adı</td></tr>
+      <tr><td>İletişim</td><td>E-posta adresi</td></tr>
+      <tr><td>Hesap / kimlik doğrulama</td><td>Şifre (sağlayıcıda şifreli/özet olarak), Google veya Apple ile giriş kimlik bilgisi (token/ID)</td></tr>
+      <tr><td>Profil</td><td>Profil fotoğrafı, il/ilçe, motosiklet marka/model/yıl, sosyal medya kullanıcı adları (isteğe bağlı)</td></tr>
+      <tr><td><strong>Konum</strong></td><td>Sürüş sırasındaki GPS konum noktaları (arka planda dahil), harita ekranında anlık konum, canlı harita modunda anlık konum ve hız</td></tr>
+      <tr><td>Sürüş / aktivite</td><td>Toplam km, süre, geçilen il/ilçe, sürüş tipi, basitleştirilmiş rota, hız profili, geçmiş sürüşler</td></tr>
+      <tr><td>Kullanıcı içeriği</td><td>Harita pinleri (konum + not + fotoğraf), kulüp bilgileri/üyelikleri, çalıntı motosiklet ihbarları, geri bildirimler</td></tr>
+      <tr><td>Sosyal / topluluk</td><td>Karşılaşma kayıtları, engelleme listesi, sıralama ve madalya bilgileri</td></tr>
+      <tr><td>İşlem güvenliği</td><td>Oturum bilgisi, bağlantı durumu, hata/çökme kayıtları (teşhis amaçlı)</td></tr>
+      <tr><td>Cihaz</td><td>Cihaz dili, pil optimizasyon durumu (yalnızca uyarı göstermek için)</td></tr>
+    </table>
+    <p class="alt">Not: Profil ve pin fotoğrafları, yalnızca +18 içerik denetimi için otomatik olarak analiz edilir; yüz tanıma/biyometrik kimliklendirme yapılmaz. Fotoğrafların özel nitelikli veri niteliği taşıyıp taşımadığı hukuki incelemede değerlendirilmelidir.</p>
+
+    <h2>3. Kişisel Verilerin İşlenme Amaçları</h2>
+    <ul>
+      <li>Üyelik/hesap oluşturma ve yönetimi, kimlik doğrulama, şifre sıfırlama.</li>
+      <li>Sürüş kaydı; mesafe, süre ve geçilen bölgelerin hesaplanması; rotanın yola oturtulması.</li>
+      <li>Bölge (ülke/il/ilçe) bazlı sıralama, liderlik tabloları, madalya/şampiyonluk hesapları.</li>
+      <li>Topluluk özellikleri: kulüpler, profiller, harita işaretlemeleri, karşılaşmalar, canlı harita.</li>
+      <li>Uygulama içi bildirimler ve e-posta gönderimi (ör. şifre sıfırlama kodu).</li>
+      <li>İçerik denetimi ve güvenlik: uygunsuz metin filtresi, fotoğraflarda +18 içerik denetimi, engelleme/şikayet mekanizmaları, kötüye kullanımın önlenmesi.</li>
+      <li>Uygulamanın işletilmesi, hata ayıklama, iyileştirme ve güvenliğin sağlanması.</li>
+    </ul>
+
+    <h2>4. Kişisel Verilerin İşlenmesinin Hukuki Sebepleri (KVKK m.5 / m.6)</h2>
+    <ul>
+      <li><strong>Açık rıza (m.5/1):</strong> Konum verisinin işlenmesi ve özellikle <strong>arka planda konum</strong> erişimi; <strong>canlı konumun yakındaki kullanıcılara gösterilmesi</strong> (görünürlük / karşılaşma); sürüş rotalarının diğer kullanıcılarla paylaşımı (varsayılan kapalı, isteğe bağlı); ve <strong>yurt dışına aktarım</strong>.</li>
+      <li><strong>Sözleşmenin kurulması/ifası (m.5/2-c):</strong> Hesap oluşturma, sürüş kaydı ve temel hizmetlerin sunulması.</li>
+      <li><strong>Meşru menfaat (m.5/2-f):</strong> Güvenlik, kötüye kullanımın önlenmesi, hata teşhisi.</li>
+      <li><strong>Hukuki yükümlülük (m.5/2-ç):</strong> İlgili mevzuattan doğan yükümlülükler.</li>
+    </ul>
+
+    <h2>5. Kişisel Veri Toplama Yöntemi</h2>
+    <p>Kişisel veriler; Uygulamaya kayıt ve kullanım sırasında, cihazınızın GPS/konum sensörü aracılığıyla (yalnızca bir sürüş başlattığınızda), sizin girdiğiniz bilgiler ve oluşturduğunuz içerikler ile, kimlik doğrulama sağlayıcıları (Google/Apple) üzerinden ve otomatik hata/çökme kayıtları yoluyla elektronik ortamda toplanır.</p>
+
+    <h2>6. Konum Verisine İlişkin Önemli İlkeler</h2>
+    <ul>
+      <li>Konum <strong>yalnızca bir sürüş başlattığınızda</strong> kaydedilir; sürüş başlatmadığınızda arka planda sürüş kaydı yapılmaz.</li>
+      <li>Sürüş sırasında uygulamayı kapatsanız/arka plana alsanız dahi kaydın kesilmemesi için <strong>arka plan konum erişimi</strong> yalnızca aktif sürüş süresince kullanılır.</li>
+      <li><strong>Ham konum noktaları en fazla 48 saat</strong> tutulup otomatik silinir; kalıcı olarak yalnızca özetler (toplam km, geçilen il/ilçe, basitleştirilmiş/renkli rota) saklanır.</li>
+      <li>Konum izni cihaz ayarlarından her zaman geri alınabilir; geri alındığında sürüş kaydı çalışmaz.</li>
+    </ul>
+
+    <h2>7. Canlı Harita ve Yakındaki Sürücülerle Konum Paylaşımı</h2>
+    <div class="vurgu">
+      <p>Uygulamadaki <strong>Canlı Harita</strong> özelliğinde, yalnızca <strong>görünürlük ayarınızı açtıysanız ve aktif bir sürüşteyseniz</strong>, anlık konumunuz ve hızınız kısa aralıklarla sunucuya yazılır ve <strong>size yakın (yaklaşık 3 km içindeki) diğer görünür kullanıcılara</strong> canlı olarak gösterilir. Bu kullanıcılar; kullanıcı adınızı, motosiklet bilgilerinizi ve mesafenizi görebilir; belirli bir yakınlığa (yaklaşık 200 m) girdiğinizde bir kart olarak açılabilir.</p>
+      <ul>
+        <li>Bu paylaşım <strong>karşılıklıdır ve varsayılan olarak KAPALIDIR</strong>; yalnızca siz açık rızanızla etkinleştirirseniz çalışır.</li>
+        <li>Görünürlük kararı, kötüye kullanımı önlemek amacıyla değiştirildikten sonra <strong>24 saat</strong> kilitlidir.</li>
+        <li>Engellediğiniz kullanıcılar sizi göremez; siz de onları görmezsiniz.</li>
+        <li>Konum yayını yalnızca aktif sürüş süresince yapılır; sürüş bitince kısa süre içinde (yaklaşık 2 dakika) yayından düşer.</li>
+        <li>Bu özelliği kullanmak zorunda değilsiniz; görünürlüğü kapalı tutarak konumunuzu diğer kullanıcılara hiç paylaşmazsınız.</li>
+      </ul>
+    </div>
+
+    <h2>8. Kişisel Verilerin Aktarılması</h2>
+    <p>Kişisel verileriniz aşağıdaki hâllerde aktarılabilir:</p>
+    <h3>a) Diğer kullanıcılara açık olan veriler</h3>
+    <p>Kullanıcı adınız, profiliniz, sıralamadaki yeriniz ve oluşturduğunuz herkese açık içerikler (harita pinleri, kulüp bilgileri, çalıntı ihbarları). İsteğe bağlı ve varsayılan kapalı olarak: canlı konum/karşılaşma görünürlüğü ve sürüş rotası paylaşımı (bkz. Bölüm 7).</p>
+    <h3>b) Hizmet sağlayıcılar (veri işleyenler)</h3>
+    <table>
+      <tr><th>Sağlayıcı</th><th>Amaç</th><th>Konum (yurt dışı olabilir)</th></tr>
+      <tr><td>Supabase</td><td>Barındırma, veritabanı, kimlik doğrulama, dosya (fotoğraf) depolama</td><td>Yurt dışı [bölge doğrulanmalı]</td></tr>
+      <tr><td>Google (Haritalar, Geocoding, Vision, Google ile Giriş)</td><td>Harita, koordinat→il/ilçe çözümleme, fotoğraf +18 denetimi, giriş</td><td>Yurt dışı</td></tr>
+      <tr><td>Apple</td><td>Apple ile Giriş (iOS)</td><td>Yurt dışı</td></tr>
+      <tr><td>Kendi OSRM sunucumuz (Hetzner)</td><td>Sürüş rotasının yola oturtulması</td><td>Finlandiya (AB)</td></tr>
+      <tr><td>Brevo (SMTP)</td><td>E-posta gönderimi (şifre sıfırlama kodu)</td><td>Yurt dışı (AB)</td></tr>
+      <tr><td>Sentry</td><td>Hata/çökme izleme (teşhis)</td><td>Yurt dışı</td></tr>
+    </table>
+    <h3>c) Yetkili kurum ve kuruluşlar</h3>
+    <p>Hukuki yükümlülük hâlinde, mevzuatın öngördüğü ölçüde yetkili kamu kurum ve kuruluşlarına aktarım yapılabilir.</p>
+
+    <h2>9. Yurt Dışına Aktarım</h2>
+    <p>Yukarıdaki hizmet sağlayıcıların sunucuları yurt dışında bulunabildiğinden, kişisel verileriniz KVKK m.9 çerçevesinde yurt dışına aktarılabilir. Bu aktarım, açık rızanıza ve/veya KVKK m.9’da öngörülen şartlara dayanır. Uygulamayı kullanmadan önce bu aktarıma ilişkin açık rızanız talep edilir.</p>
+
+    <h2>10. Saklama Süreleri</h2>
+    <ul>
+      <li><strong>Ham konum noktaları:</strong> en fazla 48 saat, ardından otomatik silinir.</li>
+      <li><strong>Canlı konum kaydı:</strong> yalnızca aktif kullanım sırasında güncel tutulur; kısa süre (yaklaşık 2 dakika) sonra geçersiz sayılır.</li>
+      <li><strong>Sürüş özetleri, profil ve topluluk verileri:</strong> hesabınız aktif olduğu sürece.</li>
+      <li><strong>Hesap silindiğinde:</strong> verileriniz derhal ve kalıcı olarak silinir (bkz. <a href="./index.html">Hesap ve Veri Silme</a>).</li>
+    </ul>
+
+    <h2>11. Veri Güvenliği</h2>
+    <p>Satır düzeyinde erişim kontrolü (RLS), aktarımda şifreleme (HTTPS), kimlik/şifre bilgilerinin sağlayıcıda şifreli tutulması ve erişim kısıtlamaları gibi teknik ve idari tedbirler uygulanır.</p>
+
+    <h2>12. İlgili Kişinin Hakları (KVKK m.11)</h2>
+    <p>KVKK m.11 uyarınca; kişisel verinizin işlenip işlenmediğini öğrenme, işlenmişse buna ilişkin bilgi talep etme, işlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme, yurt içinde/dışında aktarıldığı üçüncü kişileri bilme, eksik/yanlış işlenmişse düzeltilmesini isteme, silinmesini/yok edilmesini isteme, düzeltme/silme işlemlerinin aktarıldığı üçüncü kişilere bildirilmesini isteme, münhasıran otomatik sistemlerle analiz sonucu aleyhinize bir sonuç çıkmasına itiraz etme ve zararın giderilmesini talep etme haklarına sahipsiniz.</p>
+
+    <h2>13. Başvuru Yöntemi</h2>
+    <p>Haklarınıza ilişkin taleplerinizi, Veri Sorumlusuna Başvuru Usul ve Esasları Hakkında Tebliğ’e uygun olarak <code>mcsomtas@gmail.com</code> adresine iletebilirsiniz. Talebiniz en geç <strong>30 gün</strong> içinde sonuçlandırılır. Kimliğinizi tevsik edici bilgilerin başvurunuzda yer alması gerekir.</p>
+
+    <h2>14. Açık Rıza</h2>
+    <p>Uygulamayı kullanmaya başlarken; (i) konum verinizin ve arka planda konumun işlenmesine, (ii) görünürlüğü açmanız hâlinde canlı konumunuzun yakındaki kullanıcılara gösterilmesine ve sürüş rotanızı paylaşmanıza, (iii) kişisel verilerinizin yukarıda belirtilen hizmet sağlayıcılar aracılığıyla yurt dışına aktarılmasına ilişkin ayrıca <strong>açık rızanız</strong> talep edilir. Bu rızaları vermek zorunda değilsiniz; ilgili özellikler rıza vermediğinizde çalışmaz, ancak temel işlevlerin bir kısmı (ör. sürüş kaydı) konum rızası olmadan sunulamaz. Verdiğiniz açık rızayı her zaman geri alabilirsiniz.</p>
+
+    <h2>15. Çocukların Gizliliği</h2>
+    <p>Uygulama 18 yaşından küçükler için tasarlanmamıştır ve onlara yönelik değildir.</p>
+
+    <h2>16. Değişiklikler</h2>
+    <p>Bu metin güncellenebilir; önemli değişikliklerde kullanıcılar bilgilendirilir. Güncel sürüm bu sayfada yayımlanır.</p>
+
+    <hr />
+    <p class="en" lang="en"><strong>English summary:</strong> This is the KVKK (Turkish data protection) disclosure for Erra Rides. We process account, profile, location, ride, content, social and diagnostic data. Location is recorded only during an active ride (including background); raw GPS points are kept up to 48h then deleted, only summaries persist. In “Live Map”, if you enable visibility and are on an active ride, your live location/speed is shared with nearby visible riders (~3&nbsp;km) — this is mutual, off by default, and consent-based. Data may be processed by Supabase, Google, Apple, our OSRM server (Finland), Brevo and Sentry, possibly abroad, based on your explicit consent. You have rights under KVKK Art. 11 and can delete your account and all data anytime. Contact: <code>mcsomtas@gmail.com</code>. This is a draft pending legal review.</p>
+  </div>
+</body>
+</html>
