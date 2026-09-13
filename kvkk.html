@@ -19,6 +19,7 @@
     hr { border: none; border-top: 1px solid #2a2a2e; margin: 28px 0; }
     .uyari { background: rgba(231,76,60,.14); border: 1px solid rgba(231,76,60,.5); border-radius: 10px; padding: 12px 14px; margin: 14px 0; color: #ffd0cb; }
     .vurgu { background: rgba(255,107,0,.12); border: 1px solid rgba(255,107,0,.4); border-radius: 10px; padding: 12px 14px; margin: 14px 0; }
+    .tablo { overflow-x: auto; }
     table { width: 100%; border-collapse: collapse; margin: 10px 0; font-size: .95rem; }
     th, td { border: 1px solid #2a2a2e; padding: 8px 10px; text-align: left; vertical-align: top; }
     th { background: #232327; color: var(--turuncu); }
@@ -28,127 +29,204 @@
 <body>
   <div class="kutu">
     <h1>Erra Rides — Kişisel Verilerin İşlenmesine İlişkin Aydınlatma Metni</h1>
-    <p class="alt">6698 sayılı Kişisel Verilerin Korunması Kanunu (“KVKK”) kapsamında · Son güncelleme: 04.07.2026</p>
+    <p class="alt">6698 sayılı Kişisel Verilerin Korunması Kanunu (“KVKK”) kapsamında · Son güncelleme: 13.09.2026</p>
+    <nav style="margin:0 0 18px;font-size:.92rem;"><a href="./gizlilik.html">Gizlilik Politikası</a> · <strong style="color:#ffb37a;">KVKK Aydınlatma Metni</strong> · <a href="./index.html">Hesap ve Veri Silme</a></nav>
 
-    <div class="uyari">
-      </div>
-
-    <p>Bu Aydınlatma Metni, <strong>Erra Rides</strong> mobil uygulaması (“Uygulama”) aracılığıyla kişisel verilerinizin KVKK m.10 ve Aydınlatma Yükümlülüğünün Yerine Getirilmesinde Uyulacak Usul ve Esaslar Hakkında Tebliğ uyarınca hangi amaçlarla ve nasıl işlendiğini açıklamak üzere hazırlanmıştır. Uygulama; motosiklet sürüşlerinin kaydı, kat edilen mesafenin bölge bazında sıralanması ve topluluk özellikleri (kulüpler, profiller, madalyalar, harita işaretlemeleri, karşılaşmalar, canlı harita) sunar.</p>
+    <p>Bu Aydınlatma Metni, <strong>Erra Rides</strong> mobil uygulaması (“Uygulama”) aracılığıyla kişisel verilerinizin KVKK m.10 ve Aydınlatma Yükümlülüğünün Yerine Getirilmesinde Uyulacak Usul ve Esaslar Hakkında Tebliğ uyarınca hangi amaçlarla ve nasıl işlendiğini açıklamak üzere hazırlanmıştır. Uygulama; motosiklet sürüşlerinin kaydı (elle ya da isteğe bağlı otomatik algılama ile), kat edilen mesafenin bölge bazında sıralanması ve topluluk özellikleri (profiller, kulüpler, etkinlikler, madalyalar ve challenge’lar, harita işaretlemeleri, canlı harita, karşılaşmalar, sesli konuşma modu, anlık bildirimler) sunar.</p>
 
     <h2>1. Veri Sorumlusu</h2>
     <ul>
-      <li><strong>Veri sorumlusu:</strong> Mehmet Can Somtaş(bireysel geliştirici)</li>
+      <li><strong>Veri sorumlusu:</strong> Mehmet Can Somtaş (bireysel geliştirici)</li>
       <li><strong>Adres:</strong> Adnan Kahveci Mahallesi, Paşabahçe Caddesi, Ceylan Rezidans, B Blok, Daire:70, Beylikdüzü/İstanbul</li>
       <li><strong>E-posta:</strong> <code>mcsomtas@gmail.com</code></li>
       <li><strong>VERBİS:</strong> [Varsa kayıt no / değerlendirme sonucu]</li>
     </ul>
 
     <h2>2. İşlenen Kişisel Veri Kategorileri</h2>
-    <table>
+    <div class="tablo"><table>
       <tr><th>Kategori</th><th>Örnek veriler</th></tr>
-      <tr><td>Kimlik</td><td>Ad-soyad, kullanıcı adı</td></tr>
+      <tr><td>Kimlik</td><td>Ad-soyad, kullanıcı adı, hesap kimliği</td></tr>
       <tr><td>İletişim</td><td>E-posta adresi</td></tr>
-      <tr><td>Hesap / kimlik doğrulama</td><td>Şifre (sağlayıcıda şifreli/özet olarak), Google veya Apple ile giriş kimlik bilgisi (token/ID)</td></tr>
-      <tr><td>Profil</td><td>Profil fotoğrafı, il/ilçe, motosiklet marka/model/yıl, sosyal medya kullanıcı adları (isteğe bağlı)</td></tr>
-      <tr><td><strong>Konum</strong></td><td>Sürüş sırasındaki GPS konum noktaları (arka planda dahil), harita ekranında anlık konum, canlı harita modunda anlık konum ve hız</td></tr>
-      <tr><td>Sürüş / aktivite</td><td>Toplam km, süre, geçilen il/ilçe, sürüş tipi, basitleştirilmiş rota, hız profili, geçmiş sürüşler</td></tr>
-      <tr><td>Kullanıcı içeriği</td><td>Harita pinleri (konum + not + fotoğraf), kulüp bilgileri/üyelikleri, çalıntı motosiklet ihbarları, geri bildirimler</td></tr>
-      <tr><td>Sosyal / topluluk</td><td>Karşılaşma kayıtları, engelleme listesi, sıralama ve madalya bilgileri</td></tr>
-      <tr><td>İşlem güvenliği</td><td>Oturum bilgisi, bağlantı durumu, hata/çökme kayıtları (teşhis amaçlı)</td></tr>
-      <tr><td>Cihaz</td><td>Cihaz dili, pil optimizasyon durumu (yalnızca uyarı göstermek için)</td></tr>
-    </table>
-    <p class="alt">Not: Profil ve pin fotoğrafları, yalnızca +18 içerik denetimi için otomatik olarak analiz edilir; yüz tanıma/biyometrik kimliklendirme yapılmaz. Fotoğrafların özel nitelikli veri niteliği taşıyıp taşımadığı hukuki incelemede değerlendirilmelidir.</p>
+      <tr><td>Hesap / kimlik doğrulama</td><td>Şifre (sağlayıcıda şifreli/özet olarak), Google veya Apple ile giriş kimlik bilgisi</td></tr>
+      <tr><td>Profil</td><td>Profil fotoğrafı, il/ilçe, motosiklet marka/model/yıl, garajınızdaki motosikletler ve bakım günlüğü kayıtları (bakım türü, km, not, tarih), Instagram/YouTube kullanıcı adları (isteğe bağlı)</td></tr>
+      <tr><td><strong>Konum</strong></td><td>Sürüş sırasındaki GPS konum noktaları (arka planda dahil; hız, yön, doğruluk ve zaman bilgisiyle); otomatik algılama açıksa sizin başlatmadığınız yolculuklarda arka planda kaydedilen konum noktaları; harita ekranında anlık konum ve haritada baktığınız bölgenin merkezi; pin veya hızlı uyarı eklediğiniz andaki konum; canlı harita ve etkinlik liderliği sırasında anlık konum, hız ve yön</td></tr>
+      <tr><td>Sürüş / aktivite</td><td>Toplam km, süre, mola süresi, en yüksek hız, hız profili, geçilen il/ilçe, sürüş tipi (şahsi/ticari), yola oturtulmuş rota, geçmiş sürüşler</td></tr>
+      <tr><td><strong>Ses</strong></td><td>Konuşma modunu kullandığınızda mikrofonunuzdan alınan canlı ses (kaydedilmez, yalnızca anlık iletilir)</td></tr>
+      <tr><td>Fiziksel aktivite (Android)</td><td>Otomatik algılama açıksa, telefonunuzun araç ya da bisiklet içinde harekete geçtiğine dair Google Play Hizmetleri tarafından cihazda üretilen bildirim (olayların türü ve zamanı cihazınızdaki teşhis günlüğüne yazılır; günlüğü siz gönderirseniz bize ulaşır)</td></tr>
+      <tr><td>Bluetooth (Android)</td><td>Otomatik algılamada kask/interkom seçerken telefonunuzla eşleşmiş cihazların adı ve adresi (yalnızca ekranda gösterilir); seçtiğiniz cihazın adı ve adresi (cihazınızda saklanır); Bluetooth bağlantı olayları ve cihaz adresleri (cihazınızdaki teşhis günlüğüne yazılır). Bunlar yalnızca uygulama günlüğünü siz gönderirseniz bize ulaşır</td></tr>
+      <tr><td>Kullanıcı içeriği</td><td>Harita pinleri ve hızlı uyarılar (konum, not, fotoğraf) ve oylar; kulüpler; etkinlikler (ad, açıklama, fotoğraf, durak konumları ve saatleri) ve katılım istekleri; çalıntı motosiklet ihbarları (fotoğraf, marka/model/renk, il/ilçe, açıklama); geri bildirimler (yazdığınız telefon modeli dahil); şikayetler; motosiklet modeli önerileri</td></tr>
+      <tr><td>Sosyal / topluluk</td><td>Sıralama, madalya, şampiyonluk ve challenge bilgileri, karşılaşma kayıtları, engelleme listesi, görünürlük tercihleri</td></tr>
+      <tr><td>Bildirim</td><td>Cihazınızın anlık bildirim anahtarı (token) ve platform bilgisi, bildirim tercihi, size gönderilen bildirimlerin kaydı</td></tr>
+      <tr><td>Cihaz ve teşhis</td><td>Cihaz dili, pil optimizasyon durumu ve pil seviyesi (yalnızca cihazda), cihaz üreticisi/modeli, işletim sistemi ve uygulama sürümü, uygulamanın sistem tarafından kapatılma nedenleri (Android), hata/çökme kayıtları, sizin gönderdiğiniz uygulama günlükleri, IP adresi (bağlantı sırasında sunuculara iletilir)</td></tr>
+      <tr><td>İşlem güvenliği</td><td>Oturum bilgisi, bağlantı durumu</td></tr>
+    </table></div>
+    <p class="alt">Not: Profil, kulüp, etkinlik, pin ve çalıntı ihbarı fotoğrafları yalnızca +18 içerik denetimi için otomatik olarak analiz edilir; yüz tanıma veya biyometrik kimliklendirme yapılmaz. Fotoğrafların özel nitelikli veri niteliği taşıyıp taşımadığı hukuki incelemede değerlendirilmelidir.</p>
 
     <h2>3. Kişisel Verilerin İşlenme Amaçları</h2>
     <ul>
       <li>Üyelik/hesap oluşturma ve yönetimi, kimlik doğrulama, şifre sıfırlama.</li>
-      <li>Sürüş kaydı; mesafe, süre ve geçilen bölgelerin hesaplanması; rotanın yola oturtulması.</li>
-      <li>Bölge (ülke/il/ilçe) bazlı sıralama, liderlik tabloları, madalya/şampiyonluk hesapları.</li>
-      <li>Topluluk özellikleri: kulüpler, profiller, harita işaretlemeleri, karşılaşmalar, canlı harita.</li>
-      <li>Uygulama içi bildirimler ve e-posta gönderimi (ör. şifre sıfırlama kodu).</li>
+      <li>Sürüş kaydı; mesafe, süre, mola ve geçilen bölgelerin hesaplanması; rotanın yola oturtulması.</li>
+      <li>İsteğe bağlı <strong>otomatik sürüş algılama</strong>: yolculuğun başladığını fark etmek ve kaydı onayınıza sunmak.</li>
+      <li>Bölge (ülke/il/ilçe) bazlı sıralama, liderlik tabloları, madalya, şampiyonluk ve challenge hesapları; “Gidilen Yollar” haritası.</li>
+      <li>Topluluk özellikleri: profiller, kulüpler, etkinlikler, harita işaretlemeleri, karşılaşmalar, canlı harita.</li>
+      <li><strong>Konuşma modu</strong>: sürücüler arasında gerçek zamanlı sesli iletişim.</li>
+      <li>Uygulama içi bildirimler, anlık (push) bildirimler (sürüş sıklığınıza göre sınırlı sayıda hatırlatma dahil) ve e-posta gönderimi (ör. şifre sıfırlama kodu).</li>
       <li>İçerik denetimi ve güvenlik: uygunsuz metin filtresi, fotoğraflarda +18 içerik denetimi, engelleme/şikayet mekanizmaları, kötüye kullanımın önlenmesi.</li>
       <li>Uygulamanın işletilmesi, hata ayıklama, iyileştirme ve güvenliğin sağlanması.</li>
     </ul>
 
     <h2>4. Kişisel Verilerin İşlenmesinin Hukuki Sebepleri (KVKK m.5 / m.6)</h2>
     <ul>
-      <li><strong>Açık rıza (m.5/1):</strong> Konum verisinin işlenmesi ve özellikle <strong>arka planda konum</strong> erişimi; <strong>canlı konumun yakındaki kullanıcılara gösterilmesi</strong> (görünürlük / karşılaşma); sürüş rotalarının diğer kullanıcılarla paylaşımı (varsayılan kapalı, isteğe bağlı); ve <strong>yurt dışına aktarım</strong>.</li>
-      <li><strong>Sözleşmenin kurulması/ifası (m.5/2-c):</strong> Hesap oluşturma, sürüş kaydı ve temel hizmetlerin sunulması.</li>
-      <li><strong>Meşru menfaat (m.5/2-f):</strong> Güvenlik, kötüye kullanımın önlenmesi, hata teşhisi.</li>
+      <li><strong>Açık rıza (m.5/1):</strong> Konum verisinin işlenmesi ve <strong>arka planda konum</strong> erişimi; <strong>otomatik sürüş algılama</strong> (fiziksel aktivite ve Bluetooth bağlantı bilgisinin kullanılması, sizin başlatmadığınız yolculuklarda konum kaydı); <strong>konuşma modunda ses</strong> verisinin işlenmesi ve diğer katılımcılara iletilmesi; <strong>canlı konumun</strong> yakındaki kullanıcılara ya da etkinlik katılımcılarına gösterilmesi; karşılaşma ve sürüş görünürlüğü; anlık bildirimler.</li>
+      <li><strong>Sözleşmenin kurulması/ifası (m.5/2-c):</strong> Hesap oluşturma, sürüş kaydı, sıralamalar ve temel hizmetlerin sunulması.</li>
+      <li><strong>Meşru menfaat (m.5/2-f):</strong> Güvenlik, kötüye kullanımın önlenmesi, hata teşhisi ve uygulamanın iyileştirilmesi.</li>
       <li><strong>Hukuki yükümlülük (m.5/2-ç):</strong> İlgili mevzuattan doğan yükümlülükler.</li>
     </ul>
 
     <h2>5. Kişisel Veri Toplama Yöntemi</h2>
-    <p>Kişisel veriler; Uygulamaya kayıt ve kullanım sırasında, cihazınızın GPS/konum sensörü aracılığıyla (yalnızca bir sürüş başlattığınızda), sizin girdiğiniz bilgiler ve oluşturduğunuz içerikler ile, kimlik doğrulama sağlayıcıları (Google/Apple) üzerinden ve otomatik hata/çökme kayıtları yoluyla elektronik ortamda toplanır.</p>
+    <p>Kişisel veriler; Uygulamaya kayıt ve kullanım sırasında sizin girdiğiniz bilgiler ve oluşturduğunuz içerikler ile, cihazınızın konum servisleri, (Android’de) Google Play Hizmetleri etkinlik algılaması ve Bluetooth bağlantı bildirimleri, (konuşma modunda) mikrofonu, kimlik doğrulama sağlayıcıları (Google/Apple) ve otomatik hata/çökme kayıtları aracılığıyla elektronik ortamda toplanır.</p>
 
     <h2>6. Konum Verisine İlişkin Önemli İlkeler</h2>
     <ul>
-      <li>Konum <strong>yalnızca bir sürüş başlattığınızda</strong> kaydedilir; sürüş başlatmadığınızda arka planda sürüş kaydı yapılmaz.</li>
-      <li>Sürüş sırasında uygulamayı kapatsanız/arka plana alsanız dahi kaydın kesilmemesi için <strong>arka plan konum erişimi</strong> yalnızca aktif sürüş süresince kullanılır.</li>
-      <li><strong>Ham konum noktaları en fazla 48 saat</strong> tutulup otomatik silinir; kalıcı olarak yalnızca özetler (toplam km, geçilen il/ilçe, basitleştirilmiş/renkli rota) saklanır.</li>
-      <li>Konum izni cihaz ayarlarından her zaman geri alınabilir; geri alındığında sürüş kaydı çalışmaz.</li>
+      <li><strong>Elle sürüş:</strong> “Sürüş Başlat”a bastığınız andan “Bitir”e basana kadar konumunuz kaydedilir. Uygulamayı arka plana alsanız ya da ekranı kapatsanız da kaydın kesilmemesi için <strong>arka plan konum erişimi</strong> kullanılır. Android’de kayıt sürerken kalıcı bir bildirim gösterilir.</li>
+      <li><strong>Otomatik algılama (varsayılan kapalı):</strong> Bu özelliği açarsanız, siz “Sürüş Başlat”a basmadan ve uygulama kapalıyken de arka planda konum kaydı başlayabilir (ayrıntılar Bölüm 7).</li>
+      <li><strong>Harita:</strong> Haritayı kaydırdığınızda, o bölgenin liderlerini gösterebilmek için baktığınız bölgenin merkez koordinatı sunucuya gönderilir. Sürüş sırasında ve Canlı Harita ekranı açıkken ise anlık konumunuz; bulunduğunuz il/ilçeyi, özel bölgeyi ve yakındaki sürücüleri bulmak için kısa aralıklarla sunucuya iletilir. Bu sorgular konumu saklamaz (canlı konum paylaşımı için bkz. Bölüm 8).</li>
+      <li><strong>Sürüş durum bilgisi:</strong> Sürüş başladığında ve bittiğinde sunucuya kısa bir durum bilgisi (sürüş kimliği, platform) gönderilir.</li>
+      <li><strong>Pin ve hızlı uyarı:</strong> Eklediğiniz andaki konumunuz pinle birlikte kaydedilir ve diğer kullanıcılara gösterilir.</li>
+      <li><strong>Ham konum noktaları</strong> sunucuda en fazla 48 saat tutulup otomatik silinir. Kalıcı olarak özetler (toplam km, süre, geçilen il/ilçe), yola oturtulmuş rota ve hız profili saklanır.</li>
+      <li>Konum izni cihaz ayarlarından her zaman geri alınabilir; geri alındığında sürüş kaydı ve otomatik algılama çalışmaz.</li>
     </ul>
 
-    <h2>7. Canlı Harita ve Yakındaki Sürücülerle Konum Paylaşımı</h2>
+    <h2>7. Otomatik Sürüş Algılama</h2>
     <div class="vurgu">
-      <p>Uygulamadaki <strong>Canlı Harita</strong> özelliğinde, yalnızca <strong>görünürlük ayarınızı açtıysanız ve aktif bir sürüşteyseniz</strong>, anlık konumunuz ve hızınız kısa aralıklarla sunucuya yazılır ve <strong>size yakın (yaklaşık 3 km içindeki) diğer görünür kullanıcılara</strong> canlı olarak gösterilir. Bu kullanıcılar; kullanıcı adınızı, motosiklet bilgilerinizi ve mesafenizi görebilir; belirli bir yakınlığa (yaklaşık 200 m) girdiğinizde bir kart olarak açılabilir.</p>
+      <p>Bu özellik <strong>varsayılan olarak KAPALIDIR</strong>. Ayarlar’dan açtığınızda önce bilgilendirme ve onay ekranı gösterilir, ardından “Her zaman” konum izni (Android’de ayrıca “Fiziksel aktivite” izni) istenir.</p>
       <ul>
-        <li>Bu paylaşım <strong>karşılıklıdır ve varsayılan olarak KAPALIDIR</strong>; yalnızca siz açık rızanızla etkinleştirirseniz çalışır.</li>
-        <li>Görünürlük kararı, kötüye kullanımı önlemek amacıyla değiştirildikten sonra <strong>24 saat</strong> kilitlidir.</li>
-        <li>Engellediğiniz kullanıcılar sizi göremez; siz de onları görmezsiniz.</li>
-        <li>Konum yayını yalnızca aktif sürüş süresince yapılır; sürüş bitince kısa süre içinde (yaklaşık 2 dakika) yayından düşer.</li>
-        <li>Bu özelliği kullanmak zorunda değilsiniz; görünürlüğü kapalı tutarak konumunuzu diğer kullanıcılara hiç paylaşmazsınız.</li>
+        <li><strong>Nasıl başlar:</strong> Android’de telefonunuzun araç ya da bisiklet içinde harekete geçtiği (Google Play Hizmetleri etkinlik algılaması) veya seçtiğiniz kask/interkom cihazının Bluetooth ile bağlandığı fark edildiğinde; iPhone’da ise konumunuz düşük güçte izlenip sürüş hızı görüldüğünde kayıt başlar. Telefon araba, otobüs gibi başka bir araçtayken de hareket algılanabilir.</li>
+        <li><strong>Nerede tutulur:</strong> Kaydedilen konum noktaları telefonunuzda, uygulamanın özel alanında tutulur. Siz onaylamadan <strong>hiçbiri sunucularımıza gönderilmez</strong>, kilometrenize ve sıralamaya eklenmez.</li>
+        <li><strong>Ne zaman sunucuya gider:</strong> Yalnızca kayıt için “Motorla sürdüm” dediğinizde ya da uygulamayı açtığınızda sorulan “Sürüşe devam edilsin mi?” sorusuna “Evet” dediğinizde. Bu durumda kayıt, elle başlatılan bir sürüş gibi işlenir.</li>
+        <li><strong>Ne zaman silinir:</strong> “Motor değildi” dediğiniz kayıt telefonunuzdan silinir. İlk birkaç dakikada yeterince yol gidilmemiş ya da çok kısa kalan kayıtlar kendiliğinden silinir. Onaylamadığınız kayıtlar 14 günü doldurduktan sonra uygulamayı açtığınızda silinir; bekleyen kayıtları dilediğiniz an “Motor değildi” ile de silebilirsiniz.</li>
+        <li><strong>Ne zaman durur:</strong> Hız uzun süre (yaklaşık 10 dakika) düşük kalınca kayıt biter; seçtiğiniz kask bağlıyken molalarda kayıt sürer. Her durumda kayıt 8 saat sonra kapanır; Android’de ayrıca pil %10’un altına düşünce kapanır. Android’de kayıt sürerken bildirim gösterilir.</li>
+        <li><strong>Bluetooth:</strong> Seçtiğiniz kask/interkomun adı ve adresi telefonunuzda saklanır ve bağlantısını fark etmek için kullanılır; yalnızca uygulama günlüğünü gönderirseniz bize ulaşabilir.</li>
+        <li>Özelliği istediğiniz an Ayarlar’dan kapatabilirsiniz; kapattığınızda yeni kayıt başlamaz. Android’de o anda süren bir kayıt varsa kendi durma kuralına göre sona erer ve onayınıza sunulur. Sürekli konum izleme pil tüketimini artırır.</li>
       </ul>
     </div>
 
-    <h2>8. Kişisel Verilerin Aktarılması</h2>
-    <p>Kişisel verileriniz aşağıdaki hâllerde aktarılabilir:</p>
-    <h3>a) Diğer kullanıcılara açık olan veriler</h3>
-    <p>Kullanıcı adınız, profiliniz, sıralamadaki yeriniz ve oluşturduğunuz herkese açık içerikler (harita pinleri, kulüp bilgileri, çalıntı ihbarları). İsteğe bağlı ve varsayılan kapalı olarak: canlı konum/karşılaşma görünürlüğü ve sürüş rotası paylaşımı (bkz. Bölüm 7).</p>
-    <h3>b) Hizmet sağlayıcılar (veri işleyenler)</h3>
-    <table>
-      <tr><th>Sağlayıcı</th><th>Amaç</th><th>Konum (yurt dışı olabilir)</th></tr>
-      <tr><td>Supabase</td><td>Barındırma, veritabanı, kimlik doğrulama, dosya (fotoğraf) depolama</td><td>Yurt dışı [bölge doğrulanmalı]</td></tr>
-      <tr><td>Google (Haritalar, Geocoding, Vision, Google ile Giriş)</td><td>Harita, koordinat→il/ilçe çözümleme, fotoğraf +18 denetimi, giriş</td><td>Yurt dışı</td></tr>
-      <tr><td>Apple</td><td>Apple ile Giriş (iOS)</td><td>Yurt dışı</td></tr>
-      <tr><td>Kendi OSRM sunucumuz (Hetzner)</td><td>Sürüş rotasının yola oturtulması</td><td>Finlandiya (AB)</td></tr>
-      <tr><td>Brevo (SMTP)</td><td>E-posta gönderimi (şifre sıfırlama kodu)</td><td>Yurt dışı (AB)</td></tr>
-      <tr><td>Sentry</td><td>Hata/çökme izleme (teşhis)</td><td>Yurt dışı</td></tr>
-    </table>
-    <h3>c) Yetkili kurum ve kuruluşlar</h3>
-    <p>Hukuki yükümlülük hâlinde, mevzuatın öngördüğü ölçüde yetkili kamu kurum ve kuruluşlarına aktarım yapılabilir.</p>
+    <h2>8. Canlı Harita, Karşılaşmalar ve Etkinlik Konumu</h2>
+    <div class="vurgu">
+      <h3>a) Canlı Harita (“Karşılaşılanlarda görün” ayarı)</h3>
+      <p>Yalnızca <strong>“Karşılaşılanlarda görün” ayarını açtıysanız</strong>, aktif bir sürüşteyseniz ve Canlı Harita ekranı açıksa (etkinlik lideri istisnası için bkz. d), anlık konumunuz, hızınız ve yönünüz kısa aralıklarla sunucuya yazılır ve <strong>size yakın (yaklaşık 3 km içindeki), görünürlüğü açık diğer kullanıcılara</strong> gösterilir. Bu kullanıcılar kullanıcı adınızı, ad-soyadınızı, profil fotoğrafınızı, motosiklet bilginizi, konumunuzu, hızınızı, yönünüzü ve mesafenizi görebilir; yaklaşık 500 m’ye girdiğinizde kısa süreli bir kart açılabilir.</p>
+      <ul>
+        <li>Bu paylaşım <strong>karşılıklıdır ve varsayılan olarak KAPALIDIR</strong>.</li>
+        <li>Görünürlük tercihi, kötüye kullanımı önlemek amacıyla değiştirildikten sonra <strong>8 saat</strong> kilitlidir.</li>
+        <li>Canlı haritada engellediğiniz kullanıcılar sizi göremez; siz de onları görmezsiniz.</li>
+        <li>Konumunuz yaklaşık 2 dakikadan eskiyse kimseye gösterilmez.</li>
+      </ul>
+      <h3>b) Karşılaştıklarım</h3>
+      <p>Siz ve karşı taraf “Karşılaşılanlarda görün” ayarını açtıysanız, son 24 saatteki sürüşlerinizde aynı yerde ve aynı zamanda (yaklaşık 100 m ve 3 dakika içinde) bulunduğunuz kullanıcılar listelenir. Listede kullanıcı adı, ad-soyad, motosiklet, il/ilçe ve sosyal medya kullanıcı adları görünür.</p>
+      <h3>c) Sürüş görünürlüğü</h3>
+      <p>Siz ve profilinize bakan kişi “Rotalarını / sürüşlerini paylaş” ayarını açtıysanız, geçmiş sürüş listeniz (tarih ve saat, km, süre, mola süresi, en yüksek hız, geçilen il/ilçeler ve başı/sonu yaklaşık 2 km kırpılmış rota) profilinizde görünür. Gizlediğiniz sürüşler bu listede yer almaz. Varsayılan olarak kapalıdır. Bu ayardan bağımsız olarak toplam sürüş sayınız ve km’niz profilinizde görünür (bkz. Bölüm 12).</p>
+      <h3>d) Etkinlik lideri konumu</h3>
+      <p>Bir etkinlikte <strong>konum paylaşımını açarsanız</strong> (oluştururken veya sonradan etkinlik kartından; varsayılan kapalı), etkinliğin başlangıcından 1 saat önce ile bitişi arasında konumunuz, hızınız ve yönünüz — sürüşte olmasanız da — sunucuya yazılır ve onayladığınız katılımcılara kullanıcı adınız ve profil fotoğrafınızla gösterilir. <strong>“Karşılaşılanlarda görün” ayarınız da açıksa</strong>, bu süre boyunca yaklaşık 3 km içindeki, bu ayarı açık diğer kullanıcıların Canlı Haritasında da görünebilirsiniz. Paylaşımı etkinlik kartından kapatabilirsiniz.</p>
+    </div>
 
-    <h2>9. Yurt Dışına Aktarım</h2>
-    <p>Yukarıdaki hizmet sağlayıcıların sunucuları yurt dışında bulunabildiğinden, kişisel verileriniz KVKK m.9 çerçevesinde yurt dışına aktarılabilir. Bu aktarım, açık rızanıza ve/veya KVKK m.9’da öngörülen şartlara dayanır. Uygulamayı kullanmadan önce bu aktarıma ilişkin açık rızanız talep edilir.</p>
-
-    <h2>10. Saklama Süreleri</h2>
+    <h2>9. Konuşma Modu (Mikrofon)</h2>
     <ul>
-      <li><strong>Ham konum noktaları:</strong> en fazla 48 saat, ardından otomatik silinir.</li>
-      <li><strong>Canlı konum kaydı:</strong> yalnızca aktif kullanım sırasında güncel tutulur; kısa süre (yaklaşık 2 dakika) sonra geçersiz sayılır.</li>
-      <li><strong>Sürüş özetleri, profil ve topluluk verileri:</strong> hesabınız aktif olduğu sürece.</li>
-      <li><strong>Hesap silindiğinde:</strong> verileriniz derhal ve kalıcı olarak silinir (bkz. <a href="./index.html">Hesap ve Veri Silme</a>).</li>
+      <li>Konuşma modu yalnızca siz “Konuşma Başlat” ya da bir oda koduyla “Konuşmaya Katıl” dediğinizde çalışır; mikrofon izni ilk kullanımda istenir.</li>
+      <li>Sesiniz, <strong>kendi ses sunucumuz</strong> (LiveKit, Finlandiya) üzerinden aynı odadaki katılımcılara <strong>gerçek zamanlı</strong> iletilir. Konuşmalar <strong>kaydedilmez ve saklanmaz</strong>.</li>
+      <li>Oda kodunu bilen, giriş yapmış kullanıcılar odaya katılıp konuşmayı duyabilir; kodu yalnızca güvendiğiniz kişilerle paylaşın. Odadaki katılımcıların cihazlarına kullanıcı adınız ve hesap kimliğiniz iletilir.</li>
+      <li>Bağlantı sırasında ses sunucusu IP adresinizi ve cihaz/işletim sistemi bilgisini görür.</li>
+      <li>Android’de uygulama arka plandayken konuşma sürer ve bu sırada kalıcı bir bildirim gösterilir. Mikrofonu bağlantı çubuğundan kapatabilir, “Çık” ile konuşmayı sonlandırabilirsiniz.</li>
+      <li>Yankı engelleme, gürültü azaltma ve ses ayarlarınız cihazınızda işlenir.</li>
     </ul>
 
-    <h2>11. Veri Güvenliği</h2>
-    <p>Satır düzeyinde erişim kontrolü (RLS), aktarımda şifreleme (HTTPS), kimlik/şifre bilgilerinin sağlayıcıda şifreli tutulması ve erişim kısıtlamaları gibi teknik ve idari tedbirler uygulanır.</p>
+    <h2>10. Anlık Bildirimler</h2>
+    <p>Bildirim izni verirseniz cihazınızın bildirim anahtarı ve platform bilgisi saklanır. Bildirimler Expo, Google Firebase Cloud Messaging (Android) ve Apple Push Notification service (iOS) üzerinden iletilir. Bir süredir sürüş yapmadıysanız hatırlatma bildirimleri gönderebiliriz: otomatik rutin hatırlatmalar haftada en fazla 3 ile sınırlıdır ve o sırada sürüş kaydı gelen kullanıcılara gönderilmez; bunların dışında zaman zaman duyurular veya uzun süredir sürüş yapmayanlara yönelik toplu bildirimler de gönderilebilir. Rutin hatırlatmaların kaydı tutulur. Ayarlar &gt; Anlık Bildirimler’den ya da cihaz ayarlarından bildirimleri kapatabilirsiniz.</p>
 
-    <h2>12. İlgili Kişinin Hakları (KVKK m.11)</h2>
+    <h2>11. Uygulama Günlükleri ve Hata Kayıtları</h2>
+    <ul>
+      <li><strong>Hata/çökme kayıtları:</strong> Uygulama hataları, hata ayrıntısı ve cihaz/işletim sistemi/uygulama sürümü bilgisiyle Sentry’ye (AB – Almanya) gönderilir. Bu kayıtlara adınız veya e-posta adresiniz eklenmez; ancak hatadan önceki teknik olay izleri (ör. sunucu istek adresleri) hesap kimliğinizi içerebilir.</li>
+      <li><strong>Uygulama günlükleri:</strong> Uygulama, sorunları çözebilmek için telefonunuzda sınırlı boyutta (eskiler üzerine yazılarak) bir günlük tutar. Bu günlük sürüş kimliklerini, mesafe/hız/zaman bilgilerini, yurt dışındaki sürüşlerde yaklaşık konumu, cihaz marka/modelini, uygulamanın kapatılma nedenlerini ve (otomatik algılama açıksa) Bluetooth cihaz adı ve adreslerini içerebilir. Günlük <strong>otomatik gönderilmez</strong>; yalnızca Ayarlar &gt; Loglar’dan “gönder” derseniz kullanıcı adınız, platform/işletim sistemi ve uygulama sürümüyle birlikte bize ulaşır.</li>
+    </ul>
+
+    <h2>12. Diğer Kullanıcılara Açık Olan Veriler</h2>
+    <ul>
+      <li><strong>Profiliniz:</strong> Kullanıcı adınız, ad-soyadınız, profil fotoğrafınız, il/ilçeniz, motosikletiniz ve model yılı, Instagram/YouTube kullanıcı adlarınız, kulüp üyelikleriniz, madalyalarınız, toplam sürüş sayınız ve km’niz (şahsi/ticari) uygulamaya giriş yapmış tüm kullanıcılar tarafından görülebilir.</li>
+      <li><strong>Sıralamalar, madalyalar, şampiyonlar ve challenge’lar:</strong> Sürüş yaptığınızda toplam km’niz ve bölgeniz, kullanıcı adınız, profil fotoğrafınız ve motosiklet bilginizle ülke/il/ilçe sıralamalarında, madalya ve challenge listelerinde görünür. Sıralamalarda ve şampiyonlar listesinde ad-soyadınız, il/ilçe ve sosyal medya kullanıcı adlarınız; madalya listesinde aylık km’niz de yer alabilir. Harita kaydırıldığında bölgenin ilk sıradaki sürücüleri gösterilir. Ödüllü challenge’larda kazananın kullanıcı adı uygulamada ilan edilir. Sıralamaların hesaplanabilmesi için sürüşlerinizin (gizlediklerinizi de kapsayan) km, il/ilçe ve başlangıç/bitiş zamanı özetleri, uygulama üyelerinin erişebildiği biçimde tutulur; rotalarınız bu kapsamda paylaşılmaz.</li>
+      <li><strong>“Gidilen Yollar” haritası:</strong> Sürüş rotaları, <strong>kullanıcı bilgisi olmadan</strong> anonim çizgiler olarak Türkiye haritasında gösterilir. Gizlemediğiniz sürüşler başlangıç ve bitiş noktaları dahil tam rota olarak eklenir; gizlediğiniz sürüşlerin başı ve sonu yaklaşık 3 km kırpılır, 6 km’den kısa gizli sürüşler hiç eklenmez. Sildiğiniz veya gizlediğiniz sürüşler harita bir sonraki yenilemede (birkaç saat içinde) güncellenir.</li>
+      <li><strong>Harita pinleri ve hızlı uyarılar:</strong> Konum, not, fotoğraf ve pini ekleyenin kullanıcı adı, ad-soyadı, motosiklet, il/ilçe ve sosyal medya bilgileri. Pinler kategoriye göre sınırlı süre haritada görünür; haritadan kalksa da kayıt, hesabınızı silene kadar saklanır.</li>
+      <li><strong>Etkinlikler:</strong> Etkinlik adı, açıklaması, fotoğrafı, durak konumları ve saatleri, oluşturanın kullanıcı adı ve Instagram’ı; onaylı katılımcıların kullanıcı adı, fotoğrafı ve motosikleti.</li>
+      <li><strong>Kulüpler:</strong> Kulüp bilgileri ve üyelerin kullanıcı adı, ad-soyad, motosiklet, il/ilçe, sosyal medya, fotoğraf ve aylık km bilgisi.</li>
+      <li><strong>Çalıntı motosiklet ihbarları:</strong> İhbar bilgileri ve fotoğrafı, ihbar edenin profil bilgileriyle.</li>
+      <li><strong>İsteğe bağlı (varsayılan kapalı):</strong> Canlı harita, karşılaşmalar, sürüş görünürlüğü ve etkinlik lideri konumu (Bölüm 8); konuşma modunda sesiniz (Bölüm 9).</li>
+    </ul>
+    <p class="alt">Yüklediğiniz fotoğraflar, bağlantısını bilen kişilerin açabileceği adreslerle sunulur.</p>
+
+    <h2>13. Hizmet Sağlayıcılar ve Yurt Dışına Aktarım</h2>
+    <p>Kişisel verileriniz, hizmetin sunulması için aşağıdaki sağlayıcılar (veri işleyenler) aracılığıyla işlenir:</p>
+    <div class="tablo"><table>
+      <tr><th>Sağlayıcı</th><th>Amaç</th><th>Konum</th></tr>
+      <tr><td>Supabase</td><td>Barındırma, veritabanı, kimlik doğrulama, dosya (fotoğraf) depolama, sunucu fonksiyonları</td><td>AB – Almanya (Frankfurt)</td></tr>
+      <tr><td>Google</td><td>Harita (Android), koordinattan il/ilçe çözümleme, fotoğraf +18 denetimi (Cloud Vision), Google ile Giriş, konum ve etkinlik algılama (Play Hizmetleri, Android), anlık bildirim iletimi (Firebase Cloud Messaging)</td><td>Yurt dışı</td></tr>
+      <tr><td>Apple</td><td>Apple ile Giriş, harita (iOS), konum servisleri, anlık bildirim iletimi (APNs)</td><td>Yurt dışı</td></tr>
+      <tr><td>Expo</td><td>Anlık bildirimlerin cihazlara iletilmesi</td><td>Yurt dışı</td></tr>
+      <tr><td>Kendi sunucumuz (Hetzner)</td><td>Sürüş rotalarının ve etkinlik güzergâhlarının yola oturtulması (OSRM, OpenStreetMap verisi); konuşma modunda sesin iletilmesi (LiveKit)</td><td>AB – Finlandiya</td></tr>
+      <tr><td>Brevo</td><td>E-posta gönderimi (şifre sıfırlama kodu)</td><td>AB</td></tr>
+      <tr><td>Sentry</td><td>Hata/çökme izleme</td><td>AB – Almanya</td></tr>
+    </table></div>
+    <p>Bu sağlayıcıların sunucuları yurt dışında bulunduğundan kişisel verileriniz yurt dışına aktarılabilir. Aktarım, KVKK m.9’da öngörülen şartlar çerçevesinde gerçekleştirilir. Hukuki yükümlülük hâlinde, mevzuatın öngördüğü ölçüde yetkili kamu kurum ve kuruluşlarına da aktarım yapılabilir.</p>
+
+    <h2>14. Saklama Süreleri</h2>
+    <ul>
+      <li><strong>Sunucudaki ham konum noktaları:</strong> en fazla 48 saat, ardından otomatik silinir.</li>
+      <li><strong>Canlı konum:</strong> Kullanıcı başına yalnızca son konum tutulur; 2–3 dakikadan eski konum kimseye gösterilmez. Son konum kaydı sunucuda, bir sonraki güncellemeye veya hesabınızı silene kadar kalabilir.</li>
+      <li><strong>Onay bekleyen otomatik kayıtlar:</strong> telefonunuzda; 14 günü doldurduktan sonra uygulamayı açtığınızda silinir.</li>
+      <li><strong>Konuşmalar:</strong> kaydedilmez.</li>
+      <li><strong>Sürüş özetleri, rotalar, profil, içerikler</strong> (haritadan kalkmış pinler dahil), <strong>sıralama/madalya kayıtları, bildirim anahtarı ve bildirim kayıtları, gönderdiğiniz uygulama günlükleri:</strong> hesabınız aktif olduğu sürece.</li>
+      <li><strong>Hata/çökme kayıtları:</strong> Sentry’nin saklama süresi boyunca (sınırlı süre).</li>
+      <li><strong>Hesap silindiğinde:</strong> sunucudaki verileriniz derhal silinir (bkz. Bölüm 15 ve <a href="./index.html">Hesap ve Veri Silme</a>).</li>
+    </ul>
+
+    <h2>15. Hesap Silme ve Cihazınızda Tutulan Veriler</h2>
+    <ul>
+      <li>Hesabınızı uygulama içinden (Profil &gt; Hesabımı Sil) istediğiniz an silebilirsiniz. Profiliniz, sürüşleriniz, rotalarınız, sıralama ve madalya kayıtlarınız, pinleriniz, etkinlikleriniz, kulüp üyelikleriniz, bildirim anahtarlarınız, gönderdiğiniz günlükler ve yüklediğiniz fotoğraflar sunucudan <strong>derhal</strong> silinir.</li>
+      <li>İstisnalar: kurucusu olduğunuz kulüp başka bir üyeye devredilirse kulübün afiş fotoğrafı korunur; nadiren teknik bir aksaklıkta yüklediğiniz fotoğraflar silinemeyebilir, bu durumda talep etmeniz hâlinde silinir; katalog için gönderdiğiniz motosiklet modeli önerileri saklanabilir; sistem yedeklerindeki kopyalar yedekleme döngüsü içinde kendiliğinden silinir.</li>
+      <li>Uygulama, çalışabilmek için telefonunuzun <strong>uygulamaya özel, diğer uygulamalara kapalı alanında</strong> veri tutar: sürüş kayıt dosyaları, onay bekleyen otomatik kayıtlar, uygulama günlüğü ve ayarlar. <strong>Hesabınızı silmek veya çıkış yapmak bu verileri telefonunuzdan tamamen silmez</strong>; bunlar uygulamayı kaldırdığınızda veya cihaz ayarlarından uygulama verilerini temizlediğinizde silinir. Android’in yedekleme özelliği açıksa uygulama verileri Google hesabınıza yedeklenebilir.</li>
+    </ul>
+
+    <h2>16. Uygulama İzinleri</h2>
+    <div class="tablo"><table>
+      <tr><th>İzin</th><th>Ne zaman / ne için</th></tr>
+      <tr><td>Konum (uygulamayı kullanırken)</td><td>Harita, pin ekleme, sürüş kaydı</td></tr>
+      <tr><td>Konum (her zaman / arka plan)</td><td>Sürüş başlatırken (kaydın arka planda kesilmemesi için) ve otomatik algılamayı açarken</td></tr>
+      <tr><td>Fiziksel aktivite (Android)</td><td>Yalnızca otomatik algılamayı açarken</td></tr>
+      <tr><td>Yakındaki cihazlar / Bluetooth (Android)</td><td>Otomatik algılamada kask/interkom seçerken</td></tr>
+      <tr><td>Mikrofon</td><td>Konuşma modunu ilk kullandığınızda</td></tr>
+      <tr><td>Fotoğraflar / galeri</td><td>Profil, kulüp, etkinlik, pin veya çalıntı ihbarı fotoğrafı seçerken</td></tr>
+      <tr><td>Bildirimler</td><td>Giriş yaptıktan sonra, anlık bildirimler için</td></tr>
+      <tr><td>Pil optimizasyonu muafiyeti</td><td>İsteğe bağlı; sürüş kaydının ve otomatik algılamanın sistem tarafından durdurulmaması için</td></tr>
+    </table></div>
+    <p class="alt">Uygulama kamerayı kullanmaz. Kullanılan ses kütüphanesi nedeniyle bazı cihazlarda kamera izni listede görünebilir; bu izin istenmez ve kullanılmaz.</p>
+
+    <h2>17. Veri Güvenliği</h2>
+    <p>Satır düzeyinde erişim kontrolü (RLS), aktarımda şifreleme (HTTPS/TLS), kimlik/şifre bilgilerinin sağlayıcıda şifreli tutulması, sunucu fonksiyonlarında kimlik ve sahiplik doğrulaması, kendi sunucularımızda erişim anahtarı ve güvenlik duvarı gibi teknik ve idari tedbirler uygulanır.</p>
+
+    <h2>18. İlgili Kişinin Hakları (KVKK m.11)</h2>
     <p>KVKK m.11 uyarınca; kişisel verinizin işlenip işlenmediğini öğrenme, işlenmişse buna ilişkin bilgi talep etme, işlenme amacını ve amacına uygun kullanılıp kullanılmadığını öğrenme, yurt içinde/dışında aktarıldığı üçüncü kişileri bilme, eksik/yanlış işlenmişse düzeltilmesini isteme, silinmesini/yok edilmesini isteme, düzeltme/silme işlemlerinin aktarıldığı üçüncü kişilere bildirilmesini isteme, münhasıran otomatik sistemlerle analiz sonucu aleyhinize bir sonuç çıkmasına itiraz etme ve zararın giderilmesini talep etme haklarına sahipsiniz.</p>
 
-    <h2>13. Başvuru Yöntemi</h2>
-    <p>Haklarınıza ilişkin taleplerinizi, Veri Sorumlusuna Başvuru Usul ve Esasları Hakkında Tebliğ’e uygun olarak <code>mcsomtas@gmail.com</code> adresine iletebilirsiniz. Talebiniz en geç <strong>30 gün</strong> içinde sonuçlandırılır. Kimliğinizi tevsik edici bilgilerin başvurunuzda yer alması gerekir.</p>
+    <h2>19. Başvuru Yöntemi</h2>
+    <p>Haklarınıza ilişkin taleplerinizi, Veri Sorumlusuna Başvuru Usul ve Esasları Hakkında Tebliğ’e uygun olarak <code>mcsomtas@gmail.com</code> adresine iletebilirsiniz. Talebiniz en geç <strong>30 gün</strong> içinde sonuçlandırılır. Kimliğinizi tevsik edici bilgilerin başvurunuzda yer alması gerekir. Hesabınızı ve verilerinizi silmek için başvuru yapmanız gerekmez; uygulama içinden anında silebilirsiniz.</p>
 
-    <h2>14. Açık Rıza</h2>
-    <p>Uygulamayı kullanmaya başlarken; (i) konum verinizin ve arka planda konumun işlenmesine, (ii) görünürlüğü açmanız hâlinde canlı konumunuzun yakındaki kullanıcılara gösterilmesine ve sürüş rotanızı paylaşmanıza, (iii) kişisel verilerinizin yukarıda belirtilen hizmet sağlayıcılar aracılığıyla yurt dışına aktarılmasına ilişkin ayrıca <strong>açık rızanız</strong> talep edilir. Bu rızaları vermek zorunda değilsiniz; ilgili özellikler rıza vermediğinizde çalışmaz, ancak temel işlevlerin bir kısmı (ör. sürüş kaydı) konum rızası olmadan sunulamaz. Verdiğiniz açık rızayı her zaman geri alabilirsiniz.</p>
+    <h2>20. Açık Rıza</h2>
+    <p>Aşağıdaki işlemler için <strong>açık rızanız</strong>; uygulamanın ilk açılışındaki onay ekranında ve ilgili özelliği açarken ya da ilk kullanırken gösterilen onay pencereleri ve cihaz izinleriyle alınır: (i) konum verinizin ve arka planda konumun işlenmesi; (ii) otomatik sürüş algılama (fiziksel aktivite ve Bluetooth bağlantı bilgisinin kullanılması, sizin başlatmadığınız yolculuklarda konum kaydı); (iii) konuşma modunda sesinizin işlenmesi ve katılımcılara iletilmesi; (iv) karşılaşma/sürüş görünürlüğünü veya etkinlik konum paylaşımını açmanız hâlinde konumunuzun ve sürüşlerinizin diğer kullanıcılara gösterilmesi; (v) anlık bildirimler. Bu rızaları vermek zorunda değilsiniz; ilgili özellikler rıza vermediğinizde çalışmaz, ancak sürüş kaydı konum rızası olmadan sunulamaz. Verdiğiniz açık rızayı ilgili özelliği kapatarak, cihaz izinlerini geri alarak veya bize başvurarak her zaman geri alabilirsiniz.</p>
 
-    <h2>15. Çocukların Gizliliği</h2>
+    <h2>21. Çocukların Gizliliği</h2>
     <p>Uygulama 18 yaşından küçükler için tasarlanmamıştır ve onlara yönelik değildir.</p>
 
-    <h2>16. Değişiklikler</h2>
+    <h2>22. Değişiklikler</h2>
     <p>Bu metin güncellenebilir; önemli değişikliklerde kullanıcılar bilgilendirilir. Güncel sürüm bu sayfada yayımlanır.</p>
 
     <hr />
-    <p class="en" lang="en"><strong>English summary:</strong> This is the KVKK (Turkish data protection) disclosure for Erra Rides. We process account, profile, location, ride, content, social and diagnostic data. Location is recorded only during an active ride (including background); raw GPS points are kept up to 48h then deleted, only summaries persist. In “Live Map”, if you enable visibility and are on an active ride, your live location/speed is shared with nearby visible riders (~3&nbsp;km) — this is mutual, off by default, and consent-based. Data may be processed by Supabase, Google, Apple, our OSRM server (Finland), Brevo and Sentry, possibly abroad, based on your explicit consent. You have rights under KVKK Art. 11 and can delete your account and all data anytime. Contact: <code>mcsomtas@gmail.com</code>. This is a draft pending legal review.</p>
+    <p class="en" lang="en"><strong>English summary:</strong> This is the KVKK (Turkish data protection) disclosure for Erra Rides. We process account, profile, location, ride, audio (Talk mode), physical activity and Bluetooth (Android, automatic detection), content, social, notification and diagnostic data. Location is recorded during rides you start (including in the background). If you turn on the optional <em>automatic ride detection</em> (off by default), recording may start in the background without you pressing Start; those recordings stay on your phone and are sent to our servers only after you confirm them (“I rode this” or continuing the ride), otherwise they are deleted within 14 days. Raw GPS points on our servers are kept up to 48 hours; summaries and road-matched routes persist. In <em>Talk mode</em> your voice is relayed in real time through our own server (Finland) to people in the same room and is not recorded. Live Map, encounters, ride visibility and event-leader location are opt-in and off by default (8-hour lock after changes). Your profile (name, photo, region, motorcycle, social handles, clubs, medals, total rides and distance) is visible to signed-in members; leaderboards show your username, photo, motorcycle and distance; routes appear anonymously on the “Ridden Roads” map (non-hidden rides in full). Processors: Supabase (Frankfurt, EU), Google, Apple, Expo, our own servers at Hetzner (Finland, EU), Brevo and Sentry (Germany, EU). You have rights under KVKK Art. 11 and can delete your account and server data anytime in-app. Contact: <code>mcsomtas@gmail.com</code>.</p>
   </div>
 </body>
 </html>
